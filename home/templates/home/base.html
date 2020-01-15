@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes"> {% load static %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet">
+    <title></title>
+
+</head>
+<style type="text/css">
+    .img2 {
+        width: 50px;
+    }
+    
+    .navb {
+        padding-left: 300px;
+    }
+    
+    .navbar-nav.navbar-center {
+        position: absolute;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+    
+    .bg {
+        padding: 70px;
+        background: url(static/home/images/7.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        opacity: 0.9;
+        filter: alpha(opacity=50);
+    }
+    
+    .fs {
+        border: 2px solid black;
+        padding: 30px;
+        margin: 100px;
+    }
+</style>
+
+<!--<body background="static/home/images/7.jpg">
+
+
+Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <ul class="nav navbar-nav navbar-center">
+        <a class="navbar-brand">
+            <img src="static/home/images/39.png" height="60" alt="Merry Christmas">
+        </a>
+        <a class="navbar-brand">
+            <h2><b><i>Merry Christmas</i></b></h2>
+        </a>
+        <a class="navbar-brand">
+            <img src="static/home/images/39.png" height="60" alt="Merry Christmas">
+        </a>
+    </ul>
+
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item avatar dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="static/home/images/santa13.jpg" class="img2" alt="avatar image">
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary" aria-labelledby="navbarDropdownMenuLink-55">
+                <a class="dropdown-item" href="{%url 'home:admin_login'%}">Admin Login</a>
+            </div>
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<!--/.Navbar -->
+
+<h1 align="center">{% block title %}{% endblock %}</h1>
+
+{% block content %}{% endblock%}
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</div>
+</body>
+
+</html>

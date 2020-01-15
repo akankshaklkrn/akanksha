@@ -1,0 +1,91 @@
+{% extends 'home/base.html'%}{% block title %} {% endblock %} {% block content %} {% load static %}
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes"> {% load static %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet">
+    <title></title>
+</head>
+<style type="text/css">
+    .jumbotron1 {
+        background-image: url('static/home/images/3.jpg');
+        height: 350px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 50px;
+        padding: 50px;
+    }
+    
+    .jumbotron2 {
+        background-image: url('static/home/images/311.jpg');
+        height: 350px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 50px;
+        padding: 50px;
+    }
+    
+    .font1 {
+        padding-top: 60px;
+        font-family: 'Niconne', cursive;
+    }
+    
+    .font2 {
+        padding-top: 20px;
+        font-family: 'Niconne', cursive;
+    }
+    
+    .img1 {
+        padding-bottom: 135px;
+        padding-left: 10px;
+        height: 400px;
+    }
+    
+    .img2 {
+        width: 50px;
+    }
+</style>
+
+<body background="static/home/images/7.jpg">
+
+    <div class="jumbotron1 jumbotron-fluid">
+        <div class="row">
+            <div class="col-md-2">
+
+
+                <div class="view overlay">
+                    <img src="static/home/images/gif1.gif" class="img1" alt="">
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="container">
+                    <div class="font1">
+                        <h1 class="display-4"><b>It's Christmas Time ...</b></h1>
+                        <h1 class="display-4"><b>Santa's here !</b></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron2 jumbotron-fluid">
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+                <div class="container">
+                    <div class="font2">
+                        <h1 class="display-4"><b>Hurry Up , click here to select your Christmas gifts </b></h1>
+                        <a href="{%url 'home:select_gift'%}" style="color:white">
+                            <h1 class="display-4"><b>Click Me</b></h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {% endblock %}

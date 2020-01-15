@@ -1,0 +1,41 @@
+{% extends 'home/base.html'%}{% block title %} {% endblock %} {% block content %} {% load static %}
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+        .font1 {
+            padding-top: 20px;
+            font-family: 'Niconne', cursive;
+            size: 50px;
+        }
+    </style>
+</head>
+
+<body background="static/home/images/7.jpg">
+    <div>
+        <div class="container">
+            <center>
+                <u>
+                <h1 class="font1">
+                    Wishing you a merry Christmas and a Happy new year !
+                </h1>
+                </u>
+            </center>>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="font1">Santa is going through the gift list , are you excited to receive your present ... </h1>
+                    <img src="static/home/images/santa3.jpg" height="500px"> &nbsp;
+                </div>
+                <div class="col-md-4">
+                    <h1 class="font1">Until then start preparing for Christmas , decorate your Christmas Tree :)</h1>
+                    <img src="static/home/images/tree3.jpg" height="500px"> &nbsp;
+                </div>
+                <div class="col-md-4">
+                    <h1 class="font1">Ho ho ho Santa is on his way with your gift in his bag !</h1>
+                    <img src="static/home/images/santa4.jpg"> &nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}

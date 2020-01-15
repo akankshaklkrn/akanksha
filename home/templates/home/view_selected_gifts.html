@@ -1,0 +1,43 @@
+{% extends 'home/base.html'%}{% block title %} {% endblock %} {% block content %} {% load static %}
+
+<style type="text/css">
+    .img1 {
+        margin: 50px;
+        height: 500px;
+    }
+    
+    .font1 {
+        padding-top: 20px;
+        font-family: 'Niconne', cursive;
+    }
+</style>
+
+<body background="static/home/images/7.jpg">
+    <div class="container ">
+        <center>
+            <h1 class="font1">
+                People who have selected gifts
+            </h1>
+        </center>
+
+        <div class="container ">
+            <div class="row ">
+                {%for user in users%}
+                <div class="col-md-4 ">
+                    <br>
+                    <br>
+                    <div class="card " style="width: 18rem; ">
+                        <!--<img src="{{gift.image}} " class="card-img-top " alt="... ">-->
+                        <div class="card-body ">
+                            <h5 class="card-title ">Name : {{user.username}}</h5>
+                            <p class="card-text ">Mobile no : {{user.mob_no}}</p>
+                            <h5 class="card-title ">Address : {{user.address}}</h5>
+                            <p class="card-text ">{{user.description}}</p>
+
+                        </div>
+                    </div>
+                </div>
+                {%endfor%}
+            </div>
+        </div>
+        {{data}} {% endblock %}
